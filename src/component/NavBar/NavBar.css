@@ -1,5 +1,17 @@
-.fixright {
-    position: fixed;
+.navbar {
+    display: flex;
+    flex-direction:column;
     margin-top:0;
-    margin-right:0;
+    text-align: center;
 }
+.navbaritem {
+    width:17rem;
+    height:7rem;
+    margin-right:0;
+    text-align: center;
+    line-height: 7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.1rem;
+
+}
+

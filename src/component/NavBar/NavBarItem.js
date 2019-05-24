@@ -1,4 +1,5 @@
 import React from "react"
+import './NavBar.css'
 
 class NavBarItem extends React.Component{
     constructor(props){
@@ -8,15 +9,13 @@ class NavBarItem extends React.Component{
         };
     }
     render(){
-        const {bgcolor, color, height, width, text} = this.props;
-        
-        const navbarClasses = className({
-            [classes.fixed]: fixed,
-            [classes[background-color]]:bgcolor,
-            [classes[color]]:color,
-        })
+        const {bgcolor, txcolor, text} = this.props;
         return(
-            <div className={navbarClasses}>{text}</div>
+            <div className='navbaritem' style={{backgroundColor:bgcolor, color:txcolor}}>
+            
+            {text}
+            
+            </div>
         )
     }
 }

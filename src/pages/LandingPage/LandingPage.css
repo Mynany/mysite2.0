@@ -1,11 +1,21 @@
 .landingpage{
+    height: calc(100vh - 48px);
+    display: flex;
+    flex-direction: row;
     text-align: center;
     background-color: rgb(26,26,27);
 }
-.logo-img{
-    position:fixed;
-    width:5rem;
+.skullwrap{
+    width:20rem;
+    margin-left:10%;
     height: auto;
-    margin-top:0;
+    align-content: center;
 }
+
+.skull{
+    margin: 30% 30% ;
+    width:20rem;
+}
+
+
 
