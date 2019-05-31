@@ -1,3 +1,7 @@
+html{
+  font-size: calc(100vw/7.5);
+
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,11 +9,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  backgroundColor:rgb(26,26,27);
+  background-color:rgb(243,242,242);
+  font-size: calc(100vw/10);
 
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+@keyframes showhrefbg
+{
+from {background-size: 0% 100%;}
+to {background-size: 100% 100%;}
+}
+
+@-moz-keyframes showhrefbg /* Firefox */
+{
+  from {background-size: 0% 100%;}
+  to {background-size: 100% 100%;}
+}
+
+@-webkit-keyframes showhrefbg /* Safari 和 Chrome */
+{
+  from {background-size: 0% 100%;}
+  to {background-size: 100% 100%;}
+}
+
+@-o-keyframes showhrefbg /* Opera */
+{
+  from {
+    background-size: 10% 100%;
+    background-repeat: no-repeat;
+
+  
+  }
+  to {background-size: 100% 100%;  background-repeat: no-repeat;
+  }
+}
+a{
+  background-repeat: no-repeat;
+}
+a:hover{
+  animation: showhrefbg 1s;
+  background-repeat: no-repeat;
+  background:url('./assets/img/paintingbg.png');
+  background-size:100% 100%;
 }

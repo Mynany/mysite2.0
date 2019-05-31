@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    flex-direction:column;
+    margin-top:0;
+    text-align: center;
+   
+}
+.navbaritem {
+    
+    border:solid white;
+    width:17rem;
+    height:7rem;
+    margin-right:0;
+    text-align: center;
+    line-height: 7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.1rem;
+    &:hover{
+        border:dotted black;
+    }
+
+}
+
+

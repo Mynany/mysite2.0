@@ -1,17 +1,70 @@
 .navbar {
     display: flex;
     flex-direction:column;
+    padding-right: 15px;
     margin-top:0;
-    text-align: center;
-}
-.navbaritem {
-    width:17rem;
-    height:7rem;
-    margin-right:0;
-    text-align: center;
-    line-height: 7rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:1.1rem;
+    text-align: right;
+    text-decoration-line: none;
+    text-decoration-color: none;
+    justify-content: center;
+    align-items: flex-end;
 
 }
+
+.navbaritem {
+    text-align: right;
+    line-height: 0.5rem;
+    font-weight: 20;
+    font-size:0.1rem;
+    color:#707070;
+}
+.navbaritem a{
+    text-decoration: none;
+    color:#707070;
+    font-weight: 50;
+}
+
+.homebutton{
+    display: flex;
+
+}
+.homebutton img{
+    display: flex;
+    height: 0.2rem;
+}
+
+
+@keyframes blurlast
+{
+from {filter: blur(0);}
+to {filter: blur(4px);}
+}
+
+@-moz-keyframes blurlast /* Firefox */
+{
+from {filter: blur(0);}
+to {filter: blur(4px);}
+}
+
+@-webkit-keyframes blurlast /* Safari 和 Chrome */
+{
+from {filter: blur(0);}
+to {filter: blur(4px);}
+}
+
+@-o-keyframes blurlast /* Opera */
+{
+from {filter: blur(0);}
+to {filter: blur(4px);}
+}
+.homebutton img:hover{
+    animation: blurlast 1s;
+    -moz-animation: blurlast 1s;	/* Firefox */
+    -webkit-animation: blurlast 1s;	/* Safari 和 Chrome */
+    -o-animation: blurlast 1s;    
+    filter:blur(4px);
+
+}
+
+
 

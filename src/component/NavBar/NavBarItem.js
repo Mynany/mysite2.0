@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'react-router-dom'
 import './NavBar.css'
 
 class NavBarItem extends React.Component{
@@ -10,11 +11,10 @@ class NavBarItem extends React.Component{
     }
     render(){
         const {bgcolor, txcolor, text} = this.props;
+        const link = "/" + text.toLowerCase();
         return(
-            <div className='navbaritem' style={{backgroundColor:bgcolor, color:txcolor}}>
-            
-            {text}
-            
+            <div className='navbaritem'>
+                <Link to={link}>{text}</Link>
             </div>
         )
     }

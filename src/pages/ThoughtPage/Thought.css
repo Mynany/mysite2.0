@@ -1,0 +1,13 @@
+.articlelist{
+    display: flex;
+    flex-direction: column;
+    margin:2%;
+    margin-top:10%;
+    overflow: hidden;
+    border:solid
+
+}
+.articlelistitem{
+    font-size:0.2rem;
+    font-weight: 100;
+}
