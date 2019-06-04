@@ -48,10 +48,18 @@ to {background-size: 100% 100%;}
 }
 a{
   background-repeat: no-repeat;
+  text-decoration: none;
 }
 a:hover{
-  animation: showhrefbg 1s;
-  background-repeat: no-repeat;
+  text-decoration: none;
+}
+.awithbg:hover {
+  text-decoration: none;
   background:url('./assets/img/paintingbg.png');
   background-size:100% 100%;
 }
+/* a:hover{
+  animation: showhrefbg 1s;
+  background-repeat: no-repeat;
+  
+} */

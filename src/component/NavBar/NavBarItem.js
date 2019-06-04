@@ -14,7 +14,7 @@ class NavBarItem extends React.Component{
         const link = "/" + text.toLowerCase();
         return(
             <div className='navbaritem'>
-                <Link to={link}>{text}</Link>
+                <Link className='awithbg' to={link}>{text}</Link>
             </div>
         )
     }

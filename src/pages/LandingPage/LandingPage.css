@@ -16,6 +16,7 @@
     align-items: center;
 }
 .myname{
+    text-rendering: optimizeLegibility; 
     color:#707070;
     font-size:0.8rem;
     font-weight:100;

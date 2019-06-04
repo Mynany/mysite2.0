@@ -25,16 +25,19 @@ class NavBar extends React.Component{
         const thoughts = "THOUGHTS"
         const contact = "CONTACT"
         return(
-            <div className="navbar">
+            <div>
                 <div className="homebutton">
                     <Link to="/"><img src={ellipse} alt="" /></Link>
                 </div>
-                <NavBarItem  text={me}></NavBarItem>
-                <NavBarItem  text={work}></NavBarItem>
-                <NavBarItem  text={thoughts}></NavBarItem>
-                <NavBarItem  text={contact}></NavBarItem>
+                <div className="navbar">
+                    <NavBarItem  text={me}></NavBarItem>
+                    <NavBarItem  text={work}></NavBarItem>
+                    <NavBarItem  text={thoughts}></NavBarItem>
+                    <NavBarItem  text={contact}></NavBarItem>
 
+                </div>
             </div>
+            
         )
     }
 }

@@ -51,7 +51,7 @@ class LandingPage extends React.Component{
                     className="code-box-shape"
                     style={{
                         position: 'absolute',
-                        transformOrigin: 'center bottom',
+                        transformOrigin: 'center top',
                     }}
                 >
                         <div className="logo">
@@ -63,9 +63,7 @@ class LandingPage extends React.Component{
                         <Texty>Pixel2.0.</Texty>
                     </div>
                     <div><br /></div>
-                    {/* <div className="arrow">
-                        <img src={arrow} alt="" />
-                    </div> */}
+                   
                     <div style={{lineHeight:'0'}}>
                         <span style={{color:'#707070', fontSize:'0.1rem',fontWeight:'50'}}>Be Humble / Have Fun </span>
                     </div>
