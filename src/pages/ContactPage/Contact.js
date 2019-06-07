@@ -2,14 +2,14 @@ import React from 'react'
 import sleep from '../../assets/img/sleep.svg'
 import Topbar from '../../component/Topbar/Topbar'
 import Navbar from '../../component/NavBar/NavBar'
-import facebook2 from '../../assets/img/facebook.svg'
-import facebook from '../../assets/img/facebook2.svg'
+import facebook from '../../assets/img/facebook.svg'
+import facebook2 from '../../assets/img/facebook2.svg'
 import instagram from '../../assets/img/instagram.svg'
 import instagram2 from '../../assets/img/instagram2.svg'
-import youtube2 from '../../assets/img/youtube.svg'
-import youtube from '../../assets/img/youtube2.svg'
-import weibo from '../../assets/img/weibo.svg'
-import weibo2 from '../../assets/img/weibo2.svg'
+import weixin from '../../assets/img/weixin.svg'
+import weixin2 from '../../assets/img/weixin2.svg'
+import twitter from '../../assets/img/twitter.svg'
+import twitter2 from '../../assets/img/twitter2.svg'
 
 
 import '../../assets/css/global.css'
@@ -23,16 +23,16 @@ class Contact extends React.Component{
                 <Topbar></Topbar>
                 <div className='sectionCenter'>
                     <div className='socialSection'>
-                        <div className='socialMedia'>
+                    <div className='socialMedia' style={{justifyContent:'flex-end'}}>
                             <img src={facebook} alt="" />
                         </div>
-                        <div className='socialMedia'>
-                            <img src={youtube} alt="" />
+                        <div className='socialMedia' style={{justifyContent:'flex-start'}}>
+                            <img src={weixin} alt="" />
                         </div>
-                        <div className='socialMedia'>
-                            <img src={weibo} alt="" />
+                        <div className='socialMedia' style={{justifyContent:'flex-end'}}>
+                            <img src={twitter} alt="" />
                         </div>
-                        <div className='socialMedia'>
+                        <div className='socialMedia' style={{justifyContent:'flex-start'}}>
                             <img src={instagram} alt="" />
                         </div>
                     </div>

@@ -51,7 +51,7 @@ class LandingPage extends React.Component{
                     className="code-box-shape"
                     style={{
                         position: 'absolute',
-                        transformOrigin: 'center top',
+                        transformOrigin: 'center bottom',
                     }}
                 >
                         <div className="logo">

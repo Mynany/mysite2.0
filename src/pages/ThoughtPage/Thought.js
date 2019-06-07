@@ -9,6 +9,8 @@ import "antd/dist/antd.css";
 import logo from '../../assets/img/logo.png'
 import Topbar from '../../component/Topbar/Topbar'
 import NavBar from '../../component/NavBar/NavBar'
+import Article from './article'
+
 class Thoughts extends React.Component{
     constructor(props){
         super(props);
@@ -23,7 +25,7 @@ class Thoughts extends React.Component{
     componentWillMount() {
         this.getArticleList()
     }
-    showModal = () => {
+    showModal = (number) => {
         this.setState({
           visible: true,
         });
@@ -57,7 +59,7 @@ class Thoughts extends React.Component{
                     <QueueAnim delay={300} className="queue-simple">
                         {this.state.articles.map((article) => {
                             return (
-                                <div key={article.number} onClick={this.showModal}>
+                                <div key={article.number} onClick={(e) => this.showModal(article.number, e)} style={{cursor:'pointer'}}>
                                     <div className="articlelistitem">
                                         <Divider orientation="left">{article.title}</Divider>
                                     </div>
@@ -70,13 +72,13 @@ class Thoughts extends React.Component{
                         })}
                        
                         <Modal
-                            title={this.state.currentArticle.title}
+                            // title={this.state.currentArticle.title}
                             visible={this.state.visible}
-                            onOk={this.handleOk}
+                            // onOk={this.handleOk}
                             onCancel={this.handleCancel}
                             width='80%'
                             >
-                            <p>{this.state.currentArticle.body}</p>
+                            <Article data={this.state.currentArticle}></Article>
                             
                         </Modal>
                     </QueueAnim>
