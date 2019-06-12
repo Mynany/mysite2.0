@@ -62,10 +62,9 @@ class LandingPage extends React.Component{
                     <div className="myname">
                         <Texty>Pixel2.0.</Texty>
                     </div>
-                    <div><br /></div>
                    
                     <div style={{lineHeight:'0'}}>
-                        <span style={{color:'#707070', fontSize:'0.1rem',fontWeight:'50'}}>Be Humble / Have Fun </span>
+                        <span style={{color:'#707070', fontSize:'1rem',fontWeight:'50'}}>Be Humble / Have Fun </span>
                     </div>
                 </div>          
                 <NavBar></NavBar>

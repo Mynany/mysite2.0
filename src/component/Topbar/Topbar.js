@@ -8,7 +8,7 @@ class Topbar extends React.Component{
     render(){
         return(
             <div className="topbar">
-                <img src={logo} alt="" />
+                <img className="toplogo" src={logo} alt="" />
             </div>
         )
     }

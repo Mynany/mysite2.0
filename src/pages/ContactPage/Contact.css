@@ -17,15 +17,12 @@
     /* align-items: flex-end; */
 }
 .socialMedia img{
-    height: 0.5rem;
-    width:0.5rem;
+    height: 4rem;
+    width:4rem;
     transition: all .07s ease;
 
 }
 .socialMedia img:hover{
     transform: scale(1.1);
-    border:solid;
-    border-color: #ffc600;
-
 }
 

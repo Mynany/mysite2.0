@@ -1,11 +1,10 @@
 .sectionCenter{
-    height: calc(100vh - 75px);
-    margin-top:75px;
-    line-height: 0.3rem;
+    height: calc(100vh);
+    /* margin-top:75px; */
+    /* line-height: 3rem; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
     text-align: center;
 }

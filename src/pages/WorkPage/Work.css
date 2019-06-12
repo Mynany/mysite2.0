@@ -1,0 +1,87 @@
+.workLine{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-rendering: optimizeLegibility; 
+}
+.workLine a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight:100;
+    color:#707070;
+    text-decoration: none;
+}
+/* .firstTitle{
+    font-size: 3rem;
+}
+.secondTitle{
+    font-size: 2.5rem;
+}
+.thirdTitle{
+    font-size: 2rem;
+}
+.fourthTitle{
+    font-size: 1.7rem;
+} */
+
+.firstTitle{
+        font-size: 2.5rem;
+    }
+    .secondTitle{
+        font-size: 2rem;
+    }
+    .thirdTitle{
+        font-size: 1.5rem;
+    }
+    .fourthTitle{
+        font-size: 1.2rem;
+    }
+@media screen and (max-width: 1096px) {
+    /* .firstTitle{
+        font-size: 2.5rem;
+    }
+    .secondTitle{
+        font-size: 2rem;
+    }
+    .thirdTitle{
+        font-size: 1.5rem;
+    }
+    .fourthTitle{
+        font-size: 1.2rem;
+    } */
+    .firstTitle{
+        font-size: 2rem;
+    }
+    .secondTitle{
+        font-size: 1.5rem;
+    }
+    .thirdTitle{
+        font-size: 1rem;
+    }
+    .fourthTitle{
+        font-size: 0.7rem;
+    }
+
+ }
+@media screen and (max-width: 700px) {
+    .firstTitle{
+        font-size: 2rem;
+    }
+    .secondTitle{
+        font-size: 1.5rem;
+    }
+    .thirdTitle{
+        font-size: 1rem;
+    }
+    .fourthTitle{
+        font-size: 0.7rem;
+    }
+}
+

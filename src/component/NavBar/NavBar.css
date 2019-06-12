@@ -2,41 +2,47 @@
     height: 100vh;
     display: flex;
     position:fixed;
-    right: 10px;
+    left: 10px;
     top:0;
     flex-direction:column;
-    text-align: right;
+    text-align: left;
     text-decoration-line: none;
     text-decoration-color: none;
 
     justify-content: center;
-    /* align-items: flex-end; */
+    align-items: flex-start;
     z-index: 100;
 
 }
 
 .navbaritem {
     text-align: right;
-    line-height: 0.5rem;
-    font-weight: 20;
-    font-size:0.1rem;
+    line-height: 5rem;
+    font-weight: 100;
+    font-size:1rem;
     color:#707070;
 }
 
 .navbaritem a{
     text-decoration: none;
     color:#707070;
-    font-weight: 50;
+    font-weight: 100;
+}
+
+.navbaritem a:hover{
+    text-decoration: none;
+    color:#707070;
 }
 
 .homebutton{
     position: fixed;
-    top: 0;
-    right: 10px;
+    top: 10px;
+    left: 10px;
+    line-height: 2rem;
     z-index: 101;
 }
 .homebutton img{
-    height: 0.2rem;
+    height: 2rem;
 }
 
 
@@ -70,6 +76,32 @@ to {filter: blur(4px);}
     -o-animation: blurlast 1s;    
     filter:blur(4px);
 
+}
+
+@media screen and (max-width: 700px) {
+    .navbar{
+        position: fixed;
+        top:0px;
+        padding-top:10px;
+        left:0;
+        width:80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 2rem;
+        line-height: 2rem;
+        z-index: 100;
+    }
+    .navbaritem{
+        display: flex;
+        flex-direction: row;
+        line-height: 2rem;
+        text-align: left;
+        font-weight: 20;
+        font-size:0.7rem;
+        color:#707070;
+    }
 }
 
 

@@ -2,6 +2,7 @@ import React from "react"
 import NavBarItem from "./NavBarItem"
 import { Link } from 'react-router-dom'
 import ellipse from '../../assets/img/Ellipse.svg'
+import logo from '../../assets/img/logo.png'
 import './NavBar.css'
 class NavBar extends React.Component{
     constructor(props){
@@ -27,7 +28,7 @@ class NavBar extends React.Component{
         return(
             <div>
                 <div className="homebutton">
-                    <Link to="/"><img src={ellipse} alt="" /></Link>
+                    <Link to="/"><img src={logo} alt="" /></Link>
                 </div>
                 <div className="navbar">
                     <NavBarItem  text={me}></NavBarItem>

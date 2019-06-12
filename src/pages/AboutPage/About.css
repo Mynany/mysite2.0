@@ -1,0 +1,33 @@
+.meColor{
+    height: 0;
+    width: 60%;
+    border-top: 100vh solid black;
+    border-right: 20vw solid transparent;
+    color:white;
+
+}
+.meColor p{
+    position: absolute;
+    font-size: 5rem;
+    top: 10%;
+    right: 50vw;
+    color:white;
+    z-index: 100;
+}
+
+@media screen and (max-width: 780px) {
+    .meColor p{
+        font-size: 3rem;
+    }
+}
+.test{
+    height: 50vh;
+    width:50vh;
+    background-color: black;
+}
+.text{
+    height: 50vh;
+    width:50vh;
+    background-color: white;
+    font-size: 4rem;
+}

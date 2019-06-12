@@ -26,7 +26,6 @@ class Article extends React.Component{
             html_url, 
             labels, 
             created_at,
-            needLoginGithub
           } = this.props.data
 
           if (!body) {
@@ -41,7 +40,7 @@ class Article extends React.Component{
             <div>
 
                 <h1> {title} </h1>
-                <a target="_blank" href={html_url}>[原文链接]</a>
+                <a target="_blank" href={html_url}>[From]</a>
                 <span>{ moment(created_at).format('YYYY-MM-DD') }</span>
 
                 <div dangerouslySetInnerHTML={{__html:html}} />

@@ -25,9 +25,10 @@ class Thoughts extends React.Component{
     componentWillMount() {
         this.getArticleList()
     }
-    showModal = (number) => {
+    showModal = (article) => {
         this.setState({
           visible: true,
+          currentArticle:article,
         });
         console.log('click')
     };
@@ -53,13 +54,13 @@ class Thoughts extends React.Component{
         return (
             
             <div>
-            <Topbar></Topbar>
+            {/* <Topbar></Topbar> */}
             <NavBar></NavBar>
                 <div className="articlelist">
                     <QueueAnim delay={300} className="queue-simple">
                         {this.state.articles.map((article) => {
                             return (
-                                <div key={article.number} onClick={(e) => this.showModal(article.number, e)} style={{cursor:'pointer'}}>
+                                <div key={article.number} onClick={() => this.showModal(article)} style={{cursor:'pointer'}}>
                                     <div className="articlelistitem">
                                         <Divider orientation="left">{article.title}</Divider>
                                     </div>

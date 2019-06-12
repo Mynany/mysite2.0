@@ -8,9 +8,10 @@ import instagram from '../../assets/img/instagram.svg'
 import instagram2 from '../../assets/img/instagram2.svg'
 import weixin from '../../assets/img/weixin.svg'
 import weixin2 from '../../assets/img/weixin2.svg'
-import twitter from '../../assets/img/twitter.svg'
-import twitter2 from '../../assets/img/twitter2.svg'
-
+import linkedin from '../../assets/img/linkedin.svg'
+import linkedin2 from '../../assets/img/linkedin2.svg'
+import github from '../../assets/img/github.svg'
+import github2 from '../../assets/img/github2.svg'
 
 import '../../assets/css/global.css'
 import './Contact.css'
@@ -20,20 +21,20 @@ class Contact extends React.Component{
         return (
             <div>
                  <Navbar></Navbar>
-                <Topbar></Topbar>
+                {/* <Topbar></Topbar> */}
                 <div className='sectionCenter'>
                     <div className='socialSection'>
                     <div className='socialMedia' style={{justifyContent:'flex-end'}}>
-                            <img src={facebook} alt="" />
+                            <a href='https://www.facebook.com/PixelYang'><img src={facebook} alt="" /></a>
                         </div>
                         <div className='socialMedia' style={{justifyContent:'flex-start'}}>
-                            <img src={weixin} alt="" />
+                            <a href='https://github.com/Mynany'><img src={github} alt="" /></a>
                         </div>
                         <div className='socialMedia' style={{justifyContent:'flex-end'}}>
-                            <img src={twitter} alt="" />
+                            <a href='https://www.linkedin.com/in/yumengyang2/'><img src={linkedin} alt="" /></a>
                         </div>
                         <div className='socialMedia' style={{justifyContent:'flex-start'}}>
-                            <img src={instagram} alt="" />
+                            <a href='https://www.instagram.com/pixelnotpixie/'><img src={instagram} alt="" /></a>
                         </div>
                     </div>
             </div>
