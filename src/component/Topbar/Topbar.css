@@ -15,3 +15,8 @@
     width: auto;
     opacity: 0.8;
 }
+
+/* .spin{
+    transform: rotate(100deg);
+    transition: all 0.7s ease-in-out;
+} */

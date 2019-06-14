@@ -4,6 +4,8 @@
     border-top: 100vh solid black;
     border-right: 20vw solid transparent;
     color:white;
+    transition: all .7s ease;
+    font-size: 5rem;
 
 }
 .meColor p{
@@ -11,10 +13,16 @@
     font-size: 5rem;
     top: 10%;
     right: 50vw;
-    color:white;
+    /* color:yellow; */
     z-index: 100;
 }
-
+.motionScale{
+    /* border:solid;
+    border-color: white;
+    border-width: 4px; */
+    transition: all .7s ease;
+    transform: rotate(365deg);
+}
 @media screen and (max-width: 780px) {
     .meColor p{
         font-size: 3rem;
@@ -24,10 +32,14 @@
     height: 50vh;
     width:50vh;
     background-color: black;
+    transition: all .7s ease;
+
 }
 .text{
     height: 50vh;
     width:50vh;
     background-color: white;
     font-size: 4rem;
+    transition: all .7s ease;
+
 }

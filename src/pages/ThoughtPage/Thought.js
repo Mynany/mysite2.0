@@ -71,7 +71,6 @@ class Thoughts extends React.Component{
                             )
                             
                         })}
-                       
                         <Modal
                             // title={this.state.currentArticle.title}
                             visible={this.state.visible}

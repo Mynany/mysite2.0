@@ -6,6 +6,7 @@ import About from './pages/AboutPage/About'
 import Thoughts from './pages/ThoughtPage/Thought'
 import Work from './pages/WorkPage/Work'
 import Contact from './pages/ContactPage/Contact'
+import RecruitApp from './pages/WorkPage/Project/RecruitApp'
 import './index.css'
 
 
@@ -18,6 +19,7 @@ ReactDOM.render(
                 <Route path="/thoughts" component={Thoughts} />
                 <Route path="/me" component={About} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/work/recruitapp" component={RecruitApp} />
             </Switch>
         </div>
     </BrowserRouter>),
