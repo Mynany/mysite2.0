@@ -1,0 +1,29 @@
+.projectSection{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+
+}
+.subSectionImg{
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+   height: 100%;
+   flex-basis: 50%;
+}
+.subSectionImg img{
+    height: 80%;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.subSectionDecs{
+    height: 60%;
+    width:60%;
+    flex-basis: 50%;
+    background-color: black;
+    border-radius: 16px;
+}

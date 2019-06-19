@@ -15,11 +15,12 @@ ReactDOM.render(
         <div>
             <Switch>
                 <Route path="/" exact component={LandingPage} />
-                <Route path="/work" component={Work} />
+                <Route path="/work" exact component={Work} />
                 <Route path="/thoughts" component={Thoughts} />
                 <Route path="/me" component={About} />
                 <Route path="/contact" component={Contact} />
-                <Route path="/work/recruitapp" component={RecruitApp} />
+                <Route path="/work/recruitapp" exact component={RecruitApp} />
+                
             </Switch>
         </div>
     </BrowserRouter>),

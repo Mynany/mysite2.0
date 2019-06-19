@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## something need to be done
+font-weight different on Chrome and Safari
+cube path
+
 ## Available Scripts
 
 In the project directory, you can run:

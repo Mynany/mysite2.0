@@ -15,12 +15,12 @@ import RecruitApp from './Project/RecruitApp'
 class Work extends React.Component{
     render(){
         return (
-            <BrowserRouter>
-             <Switch>
-                <Route path="/RecruitApp" exact component={RecruitApp} />
+            // <BrowserRouter>
+            //  <Switch>
+            //     <Route path="/RecruitApp" exact component={RecruitApp} />
                 
-             </Switch>
-            </BrowserRouter>
+            //  </Switch>
+            // </BrowserRouter>
             <div>
 
                 <NavBar></NavBar>
@@ -29,7 +29,7 @@ class Work extends React.Component{
                 <QueueAnim delay={300} className="queue-simple">
                     <div key="1">
                         <div className="workLine">
-                            <Link className='awithbg firstTitle' to="/work/RecruitApp">Recruitment Web App&nbsp;&nbsp;</Link>
+                            <Link className='awithbg firstTitle' to="/work/recruitapp">Recruitment Web App&nbsp;&nbsp;</Link>
                             <Link className='awithbg thirdTitle' to="/" >FanC &nbsp;&nbsp;</Link>
                             <Link className='awithbg secondTitle' to="/" >MySite</Link>
                         </div>
@@ -53,7 +53,6 @@ class Work extends React.Component{
 
                 </div>    
             </div>
-            // </BrowserRouter>
                   
             
         )
