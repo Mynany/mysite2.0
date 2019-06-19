@@ -1,29 +1,76 @@
+
+.projectIntro{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-left:10%;
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectIntro .projectTitle{
+    font-size: 5rem;
+    color: #707070;
+    font-weight: 100;
+}
+
+.projectIntro .projectLead{
+    font-size:2rem;
+    color:#707070;
+    font-weight: 100;
+    /* background-color: rgb(238,204,35); */
+    background-color:yellow;
+}
+
+.projectIntro .projectBreif{
+    font-size: 1.5rem;
+    color:#707070;
+    font-weight: 100;
+    margin: 0 15%;
+}
+
 .projectSection{
     display: flex;
     flex-direction: row;
     height: 100vh;
-    margin-left: 10%;
+    margin-left: 15%;
+    margin-right:5%;
     justify-content: center;
     align-items: center;
-
 }
-.subSectionImg{
+
+
+.projectSection .subSectionImg{
     flex-direction: row;
     text-align: center;
     align-items: center;
    height: 100%;
    flex-basis: 50%;
+   /* border:solid; */
 }
+
 .subSectionImg img{
-    height: 80%;
+    height: 70%;
     width: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 20%;
 }
-.subSectionDecs{
+
+.projectSection .subSectionDecs{
     height: 60%;
     width:60%;
     flex-basis: 50%;
-    background-color: black;
-    border-radius: 16px;
+    flex-direction: column;
+    /* background-color: black; */
+    /* border-radius: 16px; */
+}
+
+.subSectionDecs .DecsTitle{
+    font-size: 3rem;
+    font-weight: 100;
+
+}
+.subSectionDecs .DecsContent{
+    font-size: 1.5rem;
+    font-weight: 100;
 }
