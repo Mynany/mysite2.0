@@ -34,7 +34,7 @@ class Work extends React.Component{
                             <Link className='awithbg secondTitle' to="/" >MySite</Link>
                         </div>
                         <div className="workLine">
-                            <Link className='awithbg secondTitle' to="/" >Search Engine</Link>
+                            <Link className='awithbg secondTitle' to="/work/scrapy" >Search Engine</Link>
                         </div>
                         <div className="workLine">
                             <Link className='awithbg firstTitle' to="/" >Campus Street View</Link>

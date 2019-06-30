@@ -4,6 +4,8 @@ import loginImg from '../../../assets/img/project/login.png'
 import registerImg from '../../../assets/img/project/register.png'
 import register2 from '../../../assets/img/project/register2.png'
 import dashboard from '../../../assets/img/project/list.png'
+import msg from '../../../assets/img/project/msg.png'
+import talk from '../../../assets/img/project/talk.png'
 import Texty from 'rc-texty';
 import QueueAnim from 'rc-queue-anim';
 
@@ -29,38 +31,39 @@ class RecruitApp extends React.Component{
                     </QueueAnim> */}
 
                     <div className="projectTitle"><Texty>Recruitment Web App</Texty></div>
-                    <div className="projectLead"><Texty>React / Redux / MangoDB / Express / Socket.io</Texty></div>
-                    <div className="projectBreif"><br />The main part of this project is managing user information and chat information with redux,
+                    <div className="projectLead">React / Redux / MangoDB / Express / Socket.io</div>
+                    <div className="projectBreif"><br />The main parts of this project are managing user information and chat information with redux,
                                                          implementing communication between users with Socket.io.
-                                                         Instead of original subscribe, I use trunck middleware to make redux easier to manage.
+                                                         Instead of original subscription, I use <span className="yellowbg">trunk</span> middleware to make redux easier to manage.
                                                 
                     </div>
                 </div>
                 <div className="projectSection">
-                    <div className="subSectionImg">
+
+                    <div key="1" className="subSectionImg">
                         <img src={loginImg} alt="" />
                     </div>
-                    <div className="subSectionDecs">
+                    <div key="2" className="subSectionDecs">
                         <div className="DecsTitle">
                             LOGIN PAGE
                         </div>
                         <div className="DecsContent">
-                            User have no access to page if not login. <br />
-                            Any try to access to other page before authentication will be redirected to login page.
+                            Users have no access to other pages if not login. <br />
+                            Any try to access other pages before authentication will be redirected to login page.
                         </div>
                     </div>
                 </div>
 
                 <div className="projectSection">
-                    
                     <div className="subSectionDecs">
                     <div className="DecsTitle">
                             REGISTER PAGE
                         </div>
                         <div className="DecsContent">
-                            There are two types of user: employer and jobseeker.
-                            After user click register, they will be redirect to relevant information complete page. <br />
-                            Jobseekers can fill in their desired job and self description.<br />
+                            Encrypt password by md5.<br />
+                            There are two types of users: employer and jobseeker.<br />
+                            After user click register, they will be redirected to relevant information complete page. <br />
+                            Jobseekers can put their desired job and self description.<br />
                             Employers can put their open position and requirements.
                             
                         </div>
@@ -80,12 +83,33 @@ class RecruitApp extends React.Component{
                                 DASHBOARD PAGE
                         </div>
                         <div className="DecsContent">
-                            For employers, only jobseekers will show on their dashboard list.<br />
-                            For jobseekers, only employers will show on their dashboard list.<br />
+                            For employers, only jobseekers will be shown on their dashboard list.<br />
+                            For jobseekers, only employers will be shown on their dashboard list.<br />
                             Users can click card to talk to their desired jobseekers or employers.<br />
                         </div>
                     </div>
                     
+                </div>
+
+                <div className="projectSection">
+                    <div className="subSectionDecs">
+                    <div className="DecsTitle">
+                            MESSAGE & CHAT
+                        </div>
+                        <div className="DecsContent">
+                            Message unread will be shown as badge on the right top corner of message button.<br />
+                            Emoij is available on chat page. <br />  
+                            Used socket.io build connection between server and client. <br />
+                            socket.io listens on 'sendmsg', and then call 'recvmsg'
+                        </div>
+                    </div>
+                    <div className="subSectionImg">
+                        <img style={{height:'50%'}} src={msg} alt="" />
+                        <img style={{height:'50%'}} src={talk} alt="" />
+                    </div>
+                </div>
+                <div className="projectIntro">
+                    <div className="projectTitle">WHAT'S NEXT......</div>
                 </div>
             </div>
         )

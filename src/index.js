@@ -7,6 +7,7 @@ import Thoughts from './pages/ThoughtPage/Thought'
 import Work from './pages/WorkPage/Work'
 import Contact from './pages/ContactPage/Contact'
 import RecruitApp from './pages/WorkPage/Project/RecruitApp'
+import Scrapy from './pages/WorkPage/Project/Scrapy'
 import './index.css'
 
 
@@ -20,7 +21,7 @@ ReactDOM.render(
                 <Route path="/me" component={About} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/work/recruitapp" exact component={RecruitApp} />
-                
+                <Route path="/work/scrapy" exact component={Scrapy} />
             </Switch>
         </div>
     </BrowserRouter>),
