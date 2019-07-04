@@ -62,11 +62,12 @@ class Thoughts extends React.Component{
                             return (
                                 <div key={article.number} onClick={() => this.showModal(article)} style={{cursor:'pointer'}}>
                                     <div className="articlelistitem">
-                                        <Divider orientation="left">{article.title}</Divider>
+                                        {article.title}
+                                        <hr style={{marginLeft:'45%',marginRight:'45%'}}></hr>
                                     </div>
-                                    <div className="itemIntro">
+                                    {/* <div className="itemIntro">
                                         At {article.created_at}  By {article.user.login}
-                                    </div>
+                                    </div> */}
                                 </div>
                             )
                             
